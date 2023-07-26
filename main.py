@@ -20,7 +20,7 @@ class Simulation:
     def __init__(self):
         # General
         pygame.init()
-        self.main_surface = pygame.display.set_mode((_C("WIDTH"), _C("HEIGHT")), pygame.HWSURFACE | pygame.DOUBLEBUF | pygame.FULLSCREEN)
+        self.main_surface = pygame.display.set_mode((_C("WIDTH"), _C("HEIGHT")), pygame.HWSURFACE | pygame.DOUBLEBUF)
         self.clock = pygame.time.Clock()
         self.timer_draw = 0
         self.timer_update = 0
@@ -43,7 +43,7 @@ class Simulation:
             UpdateHandler.update(self)
             DrawHandler.draw(self)
 
-            self.clock.tick(1000)
+            self.clock.tick(60)
         pygame.quit()
 
 ''' main.py '''

@@ -1,8 +1,8 @@
 class Sim:
     __globals = {
         # Global
-        "WIDTH": 1200,
-        "HEIGHT": 670,
+        "WIDTH": 1760,
+        "HEIGHT": 990,
 
         # Colors
         "colors": {
